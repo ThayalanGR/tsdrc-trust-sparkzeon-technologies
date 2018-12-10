@@ -1,2 +1,2 @@
 # TSDRC
-Trust For Social Development &amp; Rehabilitation Centre
+Trust For Social Development & Rehabilitation Centre
