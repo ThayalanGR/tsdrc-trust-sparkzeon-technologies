@@ -22,6 +22,138 @@
 	<!-- Material Design Bootstrap -->
 	<!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.11/css/mdb.min.css" rel="stylesheet"> -->
 	<style>
+
+
+		.wrapper {
+			min-height: 100vh;
+			min-width: 100vw;
+			background: red;
+			display: flex;
+			flex-direction: row;
+		}
+
+		.leftpan{
+			padding: 25px;
+			min-width: 50vw;
+			min-height: 500px;
+
+			background: white;
+		}
+
+		.leftShadow {
+			background: lightgreen;
+			color: white;
+			box-shadow: 5px 5px 5px 5px grey;
+			border-radius: 10px;
+			margin: 6px;
+			padding-top: 3px;
+			/* padding-bottom: 2px; */
+			padding-left: 15px;
+			margin-bottom: 10px;
+		}
+
+		.rightpan {
+
+			padding: 65px 25px 25px 25px;
+			min-width: 45vw;
+			max-height: 100vh;
+			overflow-y: scroll;
+			background: #f3f3f3;
+			text-align: center;
+			box-shadow: 0 10px 10px 0 grey;
+
+		}
+		.white {
+			color: black;
+		}
+
+		.section{
+			display: flex;
+			flex-direction: row;
+			min-width: 50vw;
+			padding: 15px 15px 10px 65px;
+			background: lightcyan;
+			/* margin-right: 15px; */
+		}
+
+		.section > .left > ul {
+			list-style: none;
+			min-width: 25vw;
+			font-weight: 400;
+		}
+
+		.section > .right > ul {
+			list-style: none;
+			min-width: 25vw;
+			font-weight: 400;
+
+		}
+
+
+		.section2 {
+			min-width: 50vw;
+			background: #ffe5db;
+			padding: 15px 15px 10px 65px;			
+			font-weight: 400;
+		}
+
+
+		.rightpan > .rightHead {
+			background: lightcoral;
+			color: white;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			box-shadow: 5px 5px 5px 5px grey;
+			border-radius: 5px;
+			min-width: 43vw;
+			text-align: center;
+			position: fixed;
+			top: 80px;
+			font-size: 25px;
+			font-weight: bold;
+			margin-bottom: 20px;
+			z-index: 1000;
+		}
+
+		.news {
+			
+			padding: 10px;
+			margin-top: 3px;
+			margin-bottom: 3px;
+			max-width: 40vw;
+			display: flex;
+			flex-direction: row; 
+			justify-content: space-between;
+			font-weight: bold;
+
+			border: 1px dashed grey;
+			border-radius: 5px;
+		}
+
+		.news > .sec1 {
+		
+		}
+
+		.news > .sec2 {
+
+		}
+
+		.news > .sec3 > a {
+			background: lightcoral;
+			color: white;
+			text-decoration: none;
+			border: 1px solid black;
+			padding: 5px;
+			border-radius: 5px;
+		}
+
+		.news > .sec3 > a:hover {
+			background: lightcoral;
+			color: black;
+		}
+
+
 	</style>
 
 </head>
@@ -37,7 +169,7 @@
 					 class="icon-bar"></span><span class="icon-bar"></span>
 				</a>
 				<h6 class="brand "><a href="./index.html" style="color: lightgreen;" title="Trust for Development and Rehabilitation Centre"><img
-						 style="max-width: 50px; margin-left: 10px; margin-top: -10px;" src="./assets/img/logonav.png">TSDRC</a></h6>
+						 style="max-width: 50px; margin-left: 10px; margin-top: -10px;" src="./assets/img/logonav.png">TFSDRC</a></h6>
 				<!-- navigation -->
 				<nav class="pull-right nav-collapse collapse">
 					<ul id="menu-main" class="nav">
@@ -47,24 +179,175 @@
 			</div>
 		</div>
 	</div>
-    </div>
-
-    <section id="works" class="section">
-            <div class="container clearfix">
-                <h4>Newsfeed</h4>
-                <div class="row">
+	</div>
+	
 
 
+	<section class="wrapper">
+		<div class="leftpan">
+			<div class="leftShadow">
+				<h3 class="white">Want to design your life-style in a better way?<br>
+				<span class="white" style="font-size: 18px; font-weight: bold;">contact: Dr. Michael Arock </span><br></h3>
+			</div>
 
+			<div class="section" >
+				<div class="left">
+					<ul>
+						<li style="font-weight: bold;">Professor</li>
+						<li>Department of Computer Applications</li>
+						<li>National Institute of Technology </li>
+						<li>Tiruchirappalli </li>
+						<li>TN 620 015</li>
+						<li>INDIA	</li>
+					</ul>
+				</div>
 
-                </div>
-            </div>
-        </section>
-    
+				<div class="right">
+					<ul>
+						<li style="font-weight: bold;">Address</li>	
+						<li>B2/G4, Rohini Garden Enclave</li>
+						<li>Pattabiraman Street</li>
+						<li>Tennur</li>
+						<li>Tiruchirappalli 620 017</li>
+						<li>Tamilnadu, INDIA</li>
+						<li>Phone(Mobile):98423-78952</li>
+						<li>mail:  michael.arock@gmail.com</li>
+					</ul>
+				</div>
+			</div>
 
+			<div class="section2">
+				<p style="font-weight: bold;">Experience: (21 years since 1997)</p>
+				<ol>
+					<li>Teaching to improve their life-style through Critical Pedagogy</li>
+					<li>Helped students in making good career choice through Placement preparation talks <br> conducted every year</li>
+					<li>Motivated students to continue, who were about to quit their courses(a boy, victim <br> of child labor who was serving tea in our canteen is serving now as welding <br> supervisor in Singapore) – an outcome of our hyper-MCA students’ effort </li>
+					<li>Helped to overcome adolescent issues </li>
+					<li>Emphasized the importance of medically inclined pre-marital counselling</li>
+				</ol>
+			</div>
 
+		</div>
+		<div class="rightpan">
+			<div class="rightHead">
+				Newsfeed
+				<hr>
+			</div>
+			<ul class="list-newsfeed">
+				<li class="news">
+					<div class="sec1">1.</div>
+					<div class="sec2"> this is title </div>
+					<div class="sec3"> <a href="#" class="sec3-button"> read </a> </div>
+				</li>	
+				<li class="news">
+					<div class="sec1">1.</div>
+					<div class="sec2"> this is title </div>
+					<div class="sec3"> <a href="#" class="sec3-button"> read </a> </div>
+				</li>	
+				<li class="news">
+					<div class="sec1">1.</div>
+					<div class="sec2"> this is title </div>
+					<div class="sec3"> <a href="#" class="sec3-button"> read </a> </div>
+				</li>	
+				<li class="news">
+					<div class="sec1">1.</div>
+					<div class="sec2"> this is title </div>
+					<div class="sec3"> <a href="#" class="sec3-button"> read </a> </div>
+				</li>	
+				<li class="news">
+					<div class="sec1">1.</div>
+					<div class="sec2"> this is title </div>
+					<div class="sec3"> <a href="#" class="sec3-button"> read </a> </div>
+				</li>	
+				<li class="news">
+					<div class="sec1">1.</div>
+					<div class="sec2"> this is title </div>
+					<div class="sec3"> <a href="#" class="sec3-button"> read </a> </div>
+				</li>	
+				<li class="news">
+					<div class="sec1">1.</div>
+					<div class="sec2"> this is title </div>
+					<div class="sec3"> <a href="#" class="sec3-button"> read </a> </div>
+				</li>	
+				<li class="news">
+					<div class="sec1">1.</div>
+					<div class="sec2"> this is title </div>
+					<div class="sec3"> <a href="#" class="sec3-button"> read </a> </div>
+				</li>	
+				<li class="news">
+					<div class="sec1">1.</div>
+					<div class="sec2"> this is title </div>
+					<div class="sec3"> <a href="#" class="sec3-button"> read </a> </div>
+				</li>	
+				<li class="news">
+					<div class="sec1">1.</div>
+					<div class="sec2"> this is title </div>
+					<div class="sec3"> <a href="#" class="sec3-button"> read </a> </div>
+				</li>	
+				<li class="news">
+					<div class="sec1">1.</div>
+					<div class="sec2"> this is title </div>
+					<div class="sec3"> <a href="#" class="sec3-button"> read </a> </div>
+				</li>	
+				<li class="news">
+					<div class="sec1">1.</div>
+					<div class="sec2"> this is title </div>
+					<div class="sec3"> <a href="#" class="sec3-button"> read </a> </div>
+				</li>	
+				<li class="news">
+					<div class="sec1">1.</div>
+					<div class="sec2"> this is title </div>
+					<div class="sec3"> <a href="#" class="sec3-button"> read </a> </div>
+				</li>	
+				<li class="news">
+					<div class="sec1">1.</div>
+					<div class="sec2"> this is title </div>
+					<div class="sec3"> <a href="#" class="sec3-button"> read </a> </div>
+				</li>	
+				<li class="news">
+					<div class="sec1">1.</div>
+					<div class="sec2"> this is title </div>
+					<div class="sec3"> <a href="#" class="sec3-button"> read </a> </div>
+				</li>	
+				<li class="news">
+					<div class="sec1">1.</div>
+					<div class="sec2"> this is title </div>
+					<div class="sec3"> <a href="#" class="sec3-button"> read </a> </div>
+				</li>	
+				<li class="news">
+					<div class="sec1">1.</div>
+					<div class="sec2"> this is title </div>
+					<div class="sec3"> <a href="#" class="sec3-button"> read </a> </div>
+				</li>	
+				<li class="news">
+					<div class="sec1">1.</div>
+					<div class="sec2"> this is title </div>
+					<div class="sec3"> <a href="#" class="sec3-button"> read </a> </div>
+				</li>	
+				<li class="news">
+					<div class="sec1">1.</div>
+					<div class="sec2"> this is title </div>
+					<div class="sec3"> <a href="#" class="sec3-button"> read </a> </div>
+				</li>	
+				<li class="news">
+					<div class="sec1">1.</div>
+					<div class="sec2"> this is title </div>
+					<div class="sec3"> <a href="#" class="sec3-button"> read </a> </div>
+				</li>	
+				<li class="news">
+					<div class="sec1">1.</div>
+					<div class="sec2"> this is title </div>
+					<div class="sec3"> <a href="#" class="sec3-button"> read </a> </div>
+				</li>	
+				<li class="news">
+					<div class="sec1">1.</div>
+					<div class="sec2"> this is title </div>
+					<div class="sec3"> <a href="#" class="sec3-button"> read </a> </div>
+				</li>	
+			</ul>
 
-
+		</div>
+	</section>
 
 	<a href="#" class="scrollup"><i class="icon-angle-up icon-square icon-bgdark icon-2x"></i></a>
 

@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>TSDRC</title>
+	<title>TFSDRC</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
 	<meta name="author" content="sparkzeon technologies">
@@ -22,6 +22,48 @@
 	<!-- Material Design Bootstrap -->
 	<!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.11/css/mdb.min.css" rel="stylesheet"> -->
 	<style>
+
+		.hoverme {
+			text-decoration: none;
+			color: white;
+		}
+
+		.anshover {
+			font-size: 18px;
+			color: black;
+		}
+
+		.hoverme:hover {
+			text-decoration: none;
+			color: black;
+		}
+
+		.anshover:hover {
+			color: white;
+		}
+		.float-body {
+			z-index: 1000;
+			text-align: center;
+			min-width: 100vw;
+			max-width: 100vw;
+			overflow-x: hidden;
+			min-height: 50px;
+			/* background: #c2d5c5; */
+			background: transparent;
+			max-height: 50px;
+			position: fixed;
+			bottom: 0;
+		}
+
+		.float-message {
+			margin-top: 15px;
+			font-weight: bold;
+			color: red;
+		}
+
+
+
+
 	</style>
 
 </head>
@@ -30,35 +72,34 @@
 	<!-- navbar -->
 	<div class="navbar-wrapper">
 		<div class=" navbar navbar-fixed-top navbar-inverse">
-		<div class="navbar-inner">
-			<div class="container">
-				<!-- Responsive navbar -->
-				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span
-					 class="icon-bar"></span><span class="icon-bar"></span>
-				</a>
-				<h6 class="brand "><a href="#" style="color: lightgreen;" title="Trust for Development and Rehabilitation Centre"><img
-						 style="max-width: 50px; margin-left: 10px; margin-top: -10px;" src="./assets/img/logonav.png">TSDRC</a></h6>
-				<!-- navigation -->
-				<nav class="pull-right nav-collapse collapse">
-					<ul id="menu-main" class="nav">
-						<li><a title="trust" href="#about">About us</a></li>
-						<li><a title="services" href="#services">Services</a></li>
-						<li><a title="invitedpersons" href="#persons">Invited Persons</a></li>
-						<li><a title="trustmembers" href="#members">Trust Members</a></li>
-						<li><a title="contact" href="#contact">Contact</a></li>
-						<li><a title="gallery" href="./gallery.html">Gallery</a></li>
-						<li><a title="newsfeed" href="./newfeed.html">Newsfeed</a></li>
-						<li><a title="empty" href="#">Empty</a></li>
-						<li><a title="contact" href="./join.html" >Join with us</a></li>
-						<li><a title="contact" href="./donate.html">Donate</a></li>
-						<!-- <li><a href="register.html">Sign Up</a></li> -->
-
-						<!-- <li class="nav-item"><a class="nav-link" href="#" data-toggle="modal" data-target="#modalContactForm">Careers</a></li> -->
-					</ul>
-				</nav>
+			<div class="navbar-inner">
+				<div class="container">
+					<!-- Responsive navbar -->
+					<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span
+						 class="icon-bar"></span><span class="icon-bar"></span>
+					</a>
+					<h6 class="brand "><a href="#" style="color: lightgreen;" title="Trust for Development and Rehabilitation Centre"><img
+							 style="max-width: 50px; margin-left: 10px; margin-top: -10px;" src="./assets/img/logonav.png">TFSDRC</a></h6>
+					<!-- navigation -->
+					<nav class="pull-right nav-collapse collapse">
+						<ul id="menu-main" class="nav">
+							<li><a title="trust" href="#about">About us</a></li>
+							<li><a title="services" href="#services">Services</a></li>
+							<li><a title="invitedpersons" href="#persons">Invited Persons</a></li>
+							<li><a title="trustmembers" href="#members">Trust Members</a></li>
+							<li><a title="contact" href="#contact">Contact</a></li>
+							<li><a title="gallery" href="./gallery.html">Gallery</a></li>
+							<li><a title="newsfeed" href="./newfeed.html">Newsfeed</a></li>
+							<!-- <li><a title="empty" href="#">Empty</a></li> -->
+							<li><a title="contact" href="./join.html">Join with us</a></li>
+							<li><a title="contact" href="./donate.html">Donate</a></li>
+							<!-- <li><a href="register.html">Sign Up</a></li> -->
+							<!-- <li class="nav-item"><a class="nav-link" href="#" data-toggle="modal" data-target="#modalContactForm">Careers</a></li> -->
+						</ul>
+					</nav>
+				</div>
 			</div>
 		</div>
-	</div>
 	</div>
 	<!-- Header area -->
 	<div id="header-wrapper" class="header-slider">
@@ -70,7 +111,7 @@
 				<div class="row">
 					<div class="span12">
 						<h2>TRUST FOR SOCIAL DEVELOPMENT & REHABILITATION CENTRE</h2>
-						<h3 style="color:white;">Delusion is disease Awareness is cure. A centre for counseling</h3>
+						<h3 style="color:white;">Delusion is disease; Awareness is cure.</h3>
 						<h4 style="color:white;"><strong>Trust Reg No: BK-IV 1/2018</strong></h4>
 						<div id="main-flexslider" class="flexslider">
 							<ul class="slides">
@@ -97,18 +138,21 @@
 			</div>
 		</header>
 	</div>
+	<section class="float-body">
+		<marquee behavior="scroll" direction="left"><h4 class="float-message">Centre for Family Counselling (Alangudi, Pudukkottai, Tamilnadu, INDIA – 622301) is running under - TFSDRC.  </h4></marquee>
+	</section>
 	<!-- spacer section -->
 	<section class="spacer green">
 		<div class="container">
 			<div class="row">
-				<div class="span6 alignright flyLeft">
+				<a href="./newfeed.html" class="span6 alignright flyLeft hoverme">
 					<blockquote class="large">
-						To be trusted is a greater complement than being
-						loved. <cite>from Google</cite>
+						Want to design your life-style in a better way?<br>
+						<span class="anshover">contact: Dr. Michael Arock </span>
 					</blockquote>
-				</div>
+				</a>
 				<div class="span6 aligncenter flyRight">
-					<i class="icon-coffee icon-10x"></i>
+					<i class="fas fa-paint-brush icon-10x"></i>
 				</div>
 			</div>
 		</div>
@@ -117,27 +161,41 @@
 	<!-- section: team -->
 	<section id="about" class="section">
 		<div class="container">
-			<h4>Who We Are</h4>
+			<h4>Who we are ?</h4>
 			<div class="row">
 				<div class="span4 animated-slow flyIn">
 					<div>
-						<h2>Info</h2>
+						<h2>About us</h2>
 						<!-- <h2></h2> -->
-						<p>Trust for Social Development & Rehabilitation Centre
-							is a non – government development organization working for the ignored, abandoned, uncared and
-							unloved community since 31st January 2018. It is because without the right understanding, acceptance attitude,
-							forgiveness in the family and community today. There are various methods and various problems growing.
-							This centre has been collaboration with other organization, both government and non-governmental towards
-							bringing up the women,
-							children, adolescents and other weaker community.
+						<p>
+							<ul style="font-weight: bold;">
+								<li>
+									Trust for Social Development & Rehabilitation Centre
+									is a non – government development organization working for the ignored, abandoned, uncared and
+									unloved community since 31st January 2018. <br> <br>
+								</li>
+								<li>
+									It is because without the right understanding, acceptance attitude,
+									forgiveness in the family and community today. <br>
+									<br>
+								</li>
+								<li>
+									There are various methods and various problems growing.
+									This centre has been collaboration with other organization, both government and non-governmental towards
+									bringing up the women,
+									children, adolescents and other weaker community.
+								</li>
+							</ul>
+
 						</p>
 					</div>
 				</div>
 				<div class="span3 animated-slow offset1 flyIn">
 					<div>
-						<h2>Vission</h2>
-						<p>
-							To create a peaceful, healthy and lovable society without cultural and social degeneration and casteism.
+						<h2>Vision</h2>
+						<p style="font-weight: bold;">
+							To create a peaceful, healthy, lovable society through knowledge and awarness among stackholders without social
+							degeneration, cultural, religious and community discrimination.
 						</p>
 					</div>
 				</div>
@@ -145,7 +203,27 @@
 					<div>
 						<h2>Mission</h2>
 						<p>
-							To rehabilitate & rebuild such as those of women, children and adolescences for their peaceful and healthy life.
+							<ul style="font-weight: bold;">
+								<li>
+									To bring medical awareness about physiological developments especially
+									among rural women
+								</li>
+								<li>
+									To provide Pre-marital counselling
+								</li>
+								<li>
+									To motivate children(who are unable to go to school for various reasons)
+									and identify way-out
+								</li>
+								<li>
+									Free medical camps
+								</li>
+								<li>
+									To inculcate knowledge on both rights and duties of an individual in men
+									and women
+								</li>
+								<li>To emphasize sharing attitude among youngsters</li>
+							</ul>
 						</p>
 					</div>
 				</div>
@@ -167,21 +245,24 @@
 					<div class="people">
 						<img class="team-thumb img-circle" src="assets/img/team/patron.png" alt="" />
 						<h6><strong>Patron</strong></h6>
-						<h5 style="font-size:15px;"><strong>Rev.Father.Dr.R.K Samy</strong></h5>
+						<h5 style="font-size:15px;"><strong>Rev.Father.Dr.R.K Samy</strong><br>
+							<span style="font-size: 12px;">M. A., M.Div., M.HRM., M.Phil., ST.D</span>
+						</h5>
 						<p style="font-size:15px; font-family:Arial, Helvetica, sans-serif">
-							M. A., M.Div., M.HRM., M.Phil., ST.D
-							Parish Priest,
-							Alangudi, Pudukkottai, Tamilnadu, INDIA – 622301.</p>
+							Parish Priest, <br>
+							Alangudi, Pudukkottai, <br> Tamilnadu, INDIA – 622301.</p>
 						<p style="font-family:Arial, Helvetica, sans-serif;">Ph: +919787215095.</p>
 					</div>
 				</div>
 				<div class="span3  animated-slow flyIn">
 					<div class="people">
-						<img class="team-thumb img-circle" src="assets/img/team/managingtrustee.png" alt="" />
+						<img class="team-thumb img-circle" src="assets/img/team/martin.jpg" alt="" />
 						<h6><strong>Managing Trustee</strong></h6>
-						<h5 style="font-size:15px;"><strong>J. Martin DME</strong></h5>
+						<h5 style="font-size:15px;"><strong>Mr. J. Martin DME</strong>
+							<br>
+							<span style="font-size: 12px;">DME., B.Sc., (Psy)., PG(Counseling)</span>
+						</h5>
 						<p style="font-size:15px; font-family:Arial, Helvetica, sans-serif">
-							DME., B.Sc., (Psy)., Py cc</h5>
 							Alangudi, Pudukkottai, Tamilnadu, INDIA – 622301.
 						</p>
 						<p style="font-family:Arial, Helvetica, sans-serif;">Ph: +919787215095.</p>
@@ -189,13 +270,16 @@
 				</div>
 				<div class="span4  animated-slow flyIn">
 					<div class="people">
-						<img class="team-thumb img-circle" style="max-width: 120px;" src="assets/img/team/img-6.png" alt="" />
-						<h6><strong>Planning Trustee</strong></h6>
-						<h5 style="font-size:15px;"><strong>R. Govinda Samy</strong></h5>
+						<img class="team-thumb img-circle" style="max-width: 120px;" src="assets/img/team/managingtrustee.png" alt="" />
+						<h6><strong>Planning Trustee</strong>
+							<br>
+							<span style="font-size: 12px;"></span>
+						</h6>
+						<h5 style="font-size:15px;"><strong>Mr. R. Govinda Samy</strong></h5>
 						<p style="font-size:15px; font-family:Arial, Helvetica, sans-serif">
-							Trade union activities
-							Working President 3 units of BHEL,
-							Alangudi, Pudukkottai, Tamilnadu, INDIA – 622301.</p>
+							Trade union activities <br>
+							Working President 3 units of BHEL, <br>
+							Alangudi, Pudukkottai, <br> Tamilnadu, INDIA – 622301.</p>
 						<p style="font-family:Arial, Helvetica, sans-serif;">Ph:+91 9443540872.</p>
 					</div>
 				</div>
@@ -204,10 +288,15 @@
 				<div class="span4 offset1 animated-slow flyIn">
 					<div class="people">
 						<img class="team-thumb img-circle" src="assets/img/team/treasurer.png" alt="" />
-						<h6><strong>Treasurer</strong></h6>
-						<h5 style="font-size:15px;"><strong>A. Nancy.,</strong>
-							M.A., B.ed.,</h5>
-						<p style="font-size:15px; font-family:Arial, Helvetica, sans-serif"> Alangudi, Pudukkottai, Tamilnadu, INDIA –
+						<h6><strong>Treasurer</strong>
+
+						</h6>
+						<h5 style="font-size:15px;"><strong>Ms. A. Nancy.,</strong>
+							<br>
+							<span style="font-size: 12px;">M.A., B.ed.,</span>
+						</h5>
+						<p style="font-size:15px; font-family:Arial, Helvetica, sans-serif"> Alangudi, Pudukkottai,<br> Tamilnadu, INDIA
+							–
 							622301</p>
 						<p style="font-family:Arial, Helvetica, sans-serif;">Ph: +918110986061.</p>
 					</div>
@@ -216,10 +305,13 @@
 				<div class="span3  animated-slow flyIn">
 					<div class="people">
 						<img class="team-thumb img-circle" src="assets/img/team/tm1.png" alt="" />
-						<h6><strong>Trust Member</strong></h6>
-						<h5 style="font-size:15px;"><strong>Emanuel</strong></h5>
+						<h6><strong>Trust Member</strong>
+							<br>
+							<span style="font-size: 12px;"></span>
+						</h6>
+						<h5 style="font-size:15px;"><strong>Mr. Emanuel</strong></h5>
 						<p style="font-size:15px; font-family:Arial, Helvetica, sans-serif">
-							Social Services
+							Social Services <br>
 							Alangudi, Pudukkottai, Tamilnadu, INDIA – 622301
 						</p>
 						<p style="font-family:Arial, Helvetica, sans-serif;">Ph: +919626684031.</p>
@@ -229,8 +321,11 @@
 					<div class="people">
 						<img class="team-thumb img-circle" src="assets/img/team/tm2.png" alt="" />
 						<h6><strong>Trust Member</strong></h6>
-						<h5 style="font-size:15px;"><strong>K. Loyola Shanthi</strong></h5>
-						<p style="font-size:15px; font-family:Arial, Helvetica, sans-serif">Alangudi, Pudukkottai, Tamilnadu,
+						<h5 style="font-size:15px;"><strong>Mrs. K. Loyola Shanthi</strong>
+							<br>
+							<span style="font-size: 12px;"></span>
+						</h5>
+						<p style="font-size:15px; font-family:Arial, Helvetica, sans-serif">Alangudi, Pudukkottai, <br> Tamilnadu,
 							INDIA–622301</p>
 						<p style="font-family:Arial, Helvetica, sans-serif;">Ph: +917825968861.</p>
 
@@ -252,13 +347,13 @@
 				<div class="span4 animated-fast flyIn">
 					<div class="service-box">
 						<img src="assets/img/icons/service1.png" alt="" />
-						<h5>Family Counseling Centre</h5>
+						<h5>Family Counseling</h5>
 					</div>
 				</div>
 				<div class="span4 animated flyIn">
 					<div class="service-box">
 						<img src="assets/img/icons/service2.png" alt="" />
-						<h5>Marital and Pre-Marital Counseling Centre</h5>
+						<h5>Marital and Pre-Marital Counseling</h5>
 					</div>
 				</div>
 				<div class="span4 animated-fast flyIn">
@@ -270,13 +365,48 @@
 				<div class="span4 animated-slow flyIn">
 					<div class="service-box">
 						<img src="assets/img/icons/service4.png" alt="" />
-						<h5>Children & Adolescents Counseling Centre</h5>
+						<h5>Children & Adolescents Counseling</h5>
 					</div>
 				</div>
 				<div class="span4 animated-slow flyIn">
 					<div class="service-box">
 						<img src="assets/img/icons/service5.png" alt="" />
 						<h5>Women Empowerment & Development Program</h5>
+					</div>
+				</div>
+
+				<div class="span4 animated-slow flyIn">
+					<div class="service-box">
+						<img src="assets/img/icons/service5.png" alt="" />
+						<h5>Youth motivation & Development Program</h5>
+					</div>
+				</div>
+				<div class="span4 animated-slow flyIn">
+					<div class="service-box">
+						<img src="assets/img/icons/service5.png" alt="" />
+						<h5>Environment protection & maintenance Program</h5>
+					</div>
+				</div>
+				<div class="span4 animated-slow flyIn">
+					<div class="service-box">
+						<img src="assets/img/icons/service5.png" alt="" />
+						<h5>Female health care awarness class</h5>
+						<label for="">Every sunday between</label>
+						<u1>
+							<li>10:00 AM to 01:00 PM</li>
+							<li>02:00 PM to 04:00 PM</li>
+						</u1>
+					</div>
+				</div>
+				<div class="span4 animated-slow flyIn">
+					<div class="service-box">
+						<img src="assets/img/icons/service5.png" alt="" />
+						<h5>Individual and group counseling</h5>
+						<label for="">Should get appointment before one week</label>
+						<!-- <u1>
+							<li>10:00 AM to 01:00 PM</li>
+							<li>02:00 PM to 04:00 PM</li>
+						</u1> -->
 					</div>
 				</div>
 				<!-- <div class="span4 animated-fast flyIn">
@@ -385,7 +515,7 @@
 					<h6 style="font-size:20px; color:white;">No:25/1A, Kannaki Street extn, Alangudi, Pudukkottai, Tamilnadu, INDIA –
 						622301.</h6>
 					<h6 style="font-size:20px; color:white;">Phone / Mobile No: 0432 251719, +91 6385837301.</h6>
-					<h6 style="font-size:20px; color:white;">Email id : martinsebastin01@gmail.com & tsdrc2018@gmail.com</h6>
+					<h6 style="font-size:20px; color:white;">Email id : martinsebastin01@gmail.com & tfsdrc@gmail.com</h6>
 
 				</center>
 			</p>
@@ -416,21 +546,20 @@
 									<div class="validation"></div>
 								</div>
 								<div class="field message form-group">
-									<textarea class="form-control" name="message" id="message" rows="5" 
-									 placeholder="Message"></textarea>
+									<textarea class="form-control" name="message" id="message" rows="5" placeholder="Message"></textarea>
 									<div class="validation"></div>
 								</div>
 								<div class="form-group" style="margin-left: 45%;">
-									<button type="submit" id="leave-button"  class="btn btn-theme" >Send message</button>
+									<button type="submit" id="leave-button" class="btn btn-theme">Send message</button>
 								</div>
 								<br>
-						
-							<div class="" style="text-align:center;">
-								<h4>Location</h4>
-								<img class="" src="./assets/img/tsdrc.png" alt="location">
 
+								<div class="" style="text-align:center;">
+									<h4>Location</h4>
+									<img class="" src="./assets/img/tsdrc.png" alt="location">
+
+								</div>
 							</div>
-						</div>
 					</form>
 				</div>
 				<!-- ./span12 -->
@@ -449,7 +578,7 @@
 						<li><a href="#"><i class="icon-circled icon-bgdark icon-twitter icon-2x"></i></a></li>
 					</ul>
 					<p class="copyright">
-						&copy; TSDRC. All rights reserved.
+						&copy; TFSDRC. All rights reserved.
 						<div class="credits">
 							<!--
 							All the links in the footer should remain intact.
@@ -469,7 +598,7 @@
 
 
 
-	<a href="#" class="scrollup"><i class="icon-angle-up icon-square icon-bgdark icon-2x"></i></a>
+	<a href="#" class="scrollup" style="z-index: 12000;"><i class="icon-angle-up icon-square icon-bgdark icon-2x"></i></a>
 
 	<script src="./assets/js/leave.js"></script>
 	<script src="./assets/js/jquery.js"></script>
