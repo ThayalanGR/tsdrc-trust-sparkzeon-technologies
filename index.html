@@ -61,6 +61,42 @@
 			color: red;
 		}
 
+.rowspan {
+	min-width: 100vw;
+	display: flex;
+	flex-direction: row;
+	padding: 10px;
+}
+
+.left {
+	max-width: 50vw;
+	margin: 30px;
+}
+
+.right {
+	max-width: 50vw;
+	margin: 30px;
+}
+
+@media screen and (max-width: 800px) {
+	
+.rowspan {
+	min-width: 100vw;
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+}
+
+.left {
+	max-width: 80vw;
+	margin: 30px;
+}
+
+.right {
+	max-width: 80vw;
+	margin: 30px;
+}
+}
 
 
 
@@ -139,7 +175,10 @@
 		</header>
 	</div>
 	<section class="float-body">
-		<marquee behavior="scroll" direction="left"><h4 class="float-message">Centre for Family Counselling (Alangudi, Pudukkottai, Tamilnadu, INDIA – 622301) is running under - TFSDRC.  </h4></marquee>
+		<marquee behavior="scroll" direction="left">
+			<h4 class="float-message">Centre for Family Counselling (Alangudi, Pudukkottai, Tamilnadu, INDIA – 622301) is
+				running under - TFSDRC. </h4>
+		</marquee>
 	</section>
 	<!-- spacer section -->
 	<section class="spacer green">
@@ -381,17 +420,21 @@
 						<h5>Youth motivation & Development Program</h5>
 					</div>
 				</div>
+
+			</div>
+
+			<div class="row">
 				<div class="span4 animated-slow flyIn">
 					<div class="service-box">
-						<!-- <img width="100" color="green" src="assets/img/icons/environment.svg" alt="" /> -->
-						<i class="fas fa-tree fa-10x" style="color: green;"></i>
+
+						<i class="fas fa-tree fa-8x" style="color: green;"></i>
 						<h5>Environment protection & maintenance Program</h5>
 					</div>
 				</div>
 				<div class="span4 animated-slow flyIn">
 					<div class="service-box">
-						<!-- <img src="assets/img/icons/service5.png" alt="" /> -->
-						<i class="fas fa-stethoscope fa-10x" style="color: wheat;"></i>
+
+						<i class="fas fa-stethoscope fa-8x" style="color: wheat;"></i>
 						<h5>Female health care awarness class</h5>
 						<label for="">Every sunday between</label>
 						<u1>
@@ -402,46 +445,13 @@
 				</div>
 				<div class="span4 animated-slow flyIn">
 					<div class="service-box">
-						<!-- <img src="assets/img/icons/service5.png" alt="" /> -->
-						<i class="fas fa-users fa-10x" style="color: lightcoral;"></i>
+
+						<i class="fas fa-users fa-8x" style="color: lightcoral;"></i>
 						<h5>Individual and group counseling</h5>
 						<label for="">Should get appointment before one week</label>
-						<!-- <u1>
-							<li>10:00 AM to 01:00 PM</li>
-							<li>02:00 PM to 04:00 PM</li>
-						</u1> -->
 					</div>
 				</div>
-				<!-- <div class="span4 animated-fast flyIn">
-					<div class="service-box">
-						<img src="assets/img/icons/service6.png" alt="" />
-						<h5>Family Counseling Centre</h5>
-					</div>
-				</div>
-				<div class="span4 animated flyIn">
-					<div class="service-box">
-						<img src="assets/img/icons/service7.png" alt="" />
-						<h5>Marital and Pre-Marital Counseling Centre</h5>
-					</div>
-				</div>
-				<div class="span4 animated-fast flyIn">
-					<div class="service-box">
-						<img src="assets/img/icons/service8.png" alt="" />
-						<h5>Health Care Program for men and women</h5>
-					</div>
-				</div>
-				<div class="span4 animated-slow flyIn">
-					<div class="service-box">
-						<img src="assets/img/icons/service9.png" alt="" />
-						<h5>Children & Adolescents Counseling Centre</h5>
-					</div>
-				</div>
-				<div class="span4 animated-slow flyIn">
-					<div class="service-box">
-						<img src="assets/img/icons/service10.png"  alt="" />
-						<h5>Women Empowerment & Development Program</h5>
-					</div>
-				</div> -->
+
 			</div>
 		</div>
 	</section>
@@ -511,7 +521,7 @@
 
 	<!-- section: contact -->
 	<section id="contact" class="section green">
-		<div class="container">
+		<div class="container-fluid">
 			<h4>Contact us</h4>
 			<p>
 				<center>
@@ -524,15 +534,15 @@
 			</p>
 			<div class="blankdivider30">
 			</div>
-			<div class="row">
 
-				<div class="cform" id="contact-form">
+			<div class="rowspan ">
+				<div class="left" id="contact-form">
 					<div id="sendmessage">Your message has been sent. Thank you!</div>
 					<div id="errormessage"></div>
-					<form id="leave-message" role="form" class="contactForm">
-						<div class="row">
-							<div class="span12">
-								<h3>Leave us a message</h3>
+					<div class="row">
+						<div class="span6">
+							<form id="leave-message" role="form" class="contactForm">
+								<h3><b>Leave us a message</b> </h3>
 								<div class="field your-name form-group">
 									<input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4"
 									 data-msg="Please enter at least 4 chars" />
@@ -557,15 +567,15 @@
 								</div>
 								<br>
 
-								<div class="" style="text-align:center;">
-									<h4>Location</h4>
-									<img class="" src="./assets/img/tsdrc.png" alt="location">
 
-								</div>
-							</div>
+						</div>
+					</div>
 					</form>
 				</div>
-				<!-- ./span12 -->
+				<div class="right" style="text-align:center;">
+					<h3><b>Location</b></h3>
+					<img class="" src="./assets/img/tsdrc.png" alt="location">
+				</div>
 			</div>
 		</div>
 	</section>
