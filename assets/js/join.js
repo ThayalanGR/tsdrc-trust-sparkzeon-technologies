@@ -39,7 +39,7 @@ _('career-form').addEventListener("submit", event => {
   
   
     console.log(name, mname, fname, sex, date, marital, blood, education, occupation, contact1, mail, address, district, state, country, pincode)
-    const apiUrl = `http://localhost/tsdrc/restApi/career.php?name=${name}&mname=${mname}&fname=${fname}&sex=${sex}&date=${date}&marital=${marital}&blood=${blood}&education=${education}&occupation=${occupation}&contact1=${contact1}&mail=${mail}&address=${address}&district=${district}&state=${state}&country=${country}&pincode=${pincode}`
+    const apiUrl = `../../restApi/career.php?name=${name}&mname=${mname}&fname=${fname}&sex=${sex}&date=${date}&marital=${marital}&blood=${blood}&education=${education}&occupation=${occupation}&contact1=${contact1}&mail=${mail}&address=${address}&district=${district}&state=${state}&country=${country}&pincode=${pincode}`
     console.log(apiUrl)
     fetch(apiUrl)
       .then(resp => resp.json())

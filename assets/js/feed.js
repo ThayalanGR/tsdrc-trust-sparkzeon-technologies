@@ -26,7 +26,7 @@ jQuery(document).ready(function ($) {
         // container.innerHTML += content;
     }
 
-    const api = 'http://localhost/tsdrc/restApi/newsfeed.php'
+    const api = '../../restApi/newsfeed.php'
 
     fetch(api)
         .then(res => res.json())

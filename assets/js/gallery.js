@@ -33,7 +33,7 @@ jQuery(document).ready(function ($) {
         // container.innerHTML += content;
     }
 
-    const api = 'http://localhost/tsdrc/restApi/gallery.php'
+    const api = '../../tsdrc/restApi/gallery.php'
 
     fetch(api)
         .then(res => res.json())

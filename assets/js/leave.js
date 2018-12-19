@@ -17,7 +17,7 @@ _('leave-message').addEventListener("submit", event => {
 
   console.log(name, email, subject, message)
 
-  const apiUrl = `http://localhost/tsdrc/restApi/leavemessage.php?name=${name}&email=${email}&subject=${subject}&message=${message}`
+  const apiUrl = `../../restApi/leavemessage.php?name=${name}&email=${email}&subject=${subject}&message=${message}`
   console.log(apiUrl)
   fetch(apiUrl)
     .then(resp => resp.json())
