@@ -1,11 +1,11 @@
 <?php
 define('DB_DRIVER', 'mysql');
-define('DB_SERVER', 'sql310.epizy.com');
-define('DB_SERVER_USERNAME', 'epiz_23170058');
-define('DB_SERVER_PASSWORD', 'UQlAbcnVBg');
-define('DB_DATABASE', 'epiz_23170058_tfsdrc');
+define('DB_SERVER', 'sql213.epizy.com');
+define('DB_SERVER_USERNAME', 'epiz_23197397');
+define('DB_SERVER_PASSWORD', 'MC19tuzuu9v8zx');
+define('DB_DATABASE', 'epiz_23197397_tfsdrc');
 // must end with a slash
-define('SITE_URL', 'http://tfsdrc.epizy.com/');
+define('SITE_URL', 'http://tfsdrc.com/');
 
 
 
