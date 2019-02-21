@@ -11,7 +11,13 @@ define('DB_SERVER_PASSWORD', 'MC19tuzuu9v8zx');
 define('DB_DATABASE', 'epiz_23197397_tfsdrc');
 // must end with a slash
 define('SITE_URL', 'http://tfsdrc.com/');
-
+// define('DB_DRIVER', 'mysql');
+// define('DB_SERVER', 'localhost');
+// define('DB_SERVER_USERNAME', 'root');
+// define('DB_SERVER_PASSWORD', '');
+// define('DB_DATABASE', 'tsdrc');
+// // must end with a slash
+// define('SITE_URL', 'http://localhost/tsdrc/');
 
 $dboptions = array(
     PDO::ATTR_PERSISTENT => FALSE,

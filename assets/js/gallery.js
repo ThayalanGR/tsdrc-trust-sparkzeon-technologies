@@ -33,7 +33,7 @@ jQuery(document).ready(function ($) {
         // container.innerHTML += content;
     }
 
-    const api = '../../restApi/gallery.php'
+    const api = 'http://tfsdrc.com/restApi/gallery.php'
 
     fetch(api)
         .then(res => res.json())
